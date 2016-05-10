@@ -51,4 +51,4 @@ gulp.task('watch', function () {
 	gulp.watch(['./app/js/**.*js'], ['compress-js'])
 });
 
-gulp.task('dev', ['connectDev', 'watch']);
+gulp.task('dev', ['connectDev', 'css', 'compress-js', 'watch']);
